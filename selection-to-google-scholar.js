@@ -1,12 +1,15 @@
-// based on https://stanford.edu/~jugander/bookmarklets/scholarfy.html
+// made with help from Anthropic's Claude Sonnet 4
 
-(function() {
-  let selectedText = window.getSelection().toString();
-  let query = encodeURIComponent(selectedText);
-
+javascript: (() => {
+  let selectedText = window.getSelection().toString().trim();
   if (selectedText) {
-    window.location = 'https://scholar.google.com/scholar?as_sdt=6,31&q=' + query;
+    let encodedQuery = encodeURIComponent(selectedText);
+    window.open('https://scholar.google.com/scholar?as_sdt=6,31&q=' + encodedQuery, '_blank');
   } else {
-    alert('No text is selected.');
+    let query = prompt('No text selected. Enter your Google Scholar search query:');
+    if (query !== null && query.trim() !== '') {
+      let encodedQuery = encodeURIComponent(query.trim());
+      window.open('https://scholar.google.com/scholar?as_sdt=6,31&q=' + encodedQuery, '_blank');
+    }
   }
 })();
