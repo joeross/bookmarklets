@@ -108,6 +108,40 @@ These bookmarklets always open a search prompt, with smart pre-population if you
 - **Legal terms**: Select specific legal terminology for focused results
 - **Statutes**: Include section numbers when searching for specific provisions
 
+### Firefox Keywords (Highly Recommended)
+
+Firefox supports **keywords** for bookmarks, allowing you to trigger bookmarklets by typing short commands in the address bar. This is incredibly efficient for legal research:
+
+#### Setup Instructions:
+1. Save any bookmarklet as a bookmark
+2. Right-click the bookmark → "Properties" 
+3. Add a short keyword (e.g., `gs` for Google Scholar)
+4. Save the changes
+
+#### Keyword Suggestions:
+- `gs` - Google Scholar (selection or prompt)
+- `cl` - CourtListener 
+- `jus` - Justia
+- `gsp` - Google Scholar Prompt (if you have both versions)
+- `cls` - CourtListener Selection
+
+#### Usage:
+Just type your keyword in the Firefox address bar and press Enter. No mouse clicking required!
+
+**Example workflow:**
+1. Select case name: "Miranda v. Arizona"
+2. Type `gs` in address bar + Enter
+3. Instant Google Scholar search in new tab
+
+### Other Browser Alternatives
+
+**Chrome/Edge**: While they don't have native keyword support, you can:
+- Pin bookmarklets to the bookmarks bar for one-click access
+- Use extensions like "Shortkeys" for keyboard shortcuts
+- Create custom search engines in settings (for prompt-based functionality)
+
+**Safari**: Similar to Chrome - use bookmarks bar or create custom search engines
+
 ## Browser Compatibility
 
 These bookmarklets work in:
