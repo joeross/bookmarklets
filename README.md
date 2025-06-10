@@ -163,4 +163,4 @@ MIT License - Feel free to use, modify, and distribute these bookmarklets.
 
 *Happy legal researching! 📚⚖️*
 
-_// made with help from Anthropic's Claude Sonnet 4_
+_Made with help from Anthropic's Claude Sonnet 4 by [joeross](https://joeross.me)_
