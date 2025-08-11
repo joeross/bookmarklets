@@ -1,4 +1,4 @@
-# Legal Research Bookmarklets
+# Bookmarklets
 
 A collection of JavaScript bookmarklets designed to streamline legal research by providing quick access to major legal databases and search engines.
 
@@ -14,7 +14,17 @@ Bookmarklets are small JavaScript programs stored as bookmarks in your browser. 
 4. Give the bookmark a descriptive name
 5. Save the bookmark to your bookmarks bar for easy access
 
-## Bookmarklets Collection
+## Micro.blog Bookmarklets
+
+<a href="javascript:(function(){'use strict';var w=window,d=document,s=w.getSelection().toString(),u='',domain=w.location.hostname.replace(/^www\./,''),comment='';if(s.length>0){u='https://micro.blog/post?bookmarklet=true&text=>%20'+encodeURIComponent(s)+encodeURIComponent('\n\n[🔗 *'+domain+'*]('+w.location.href+')')}else{comment=prompt('Add your comment:','');if(comment!==null){comment=comment.trim();u='https://micro.blog/post?bookmarklet=true&text='+encodeURIComponent(comment)+encodeURIComponent('\n\n[🔗 *'+domain+'*]('+w.location.href+')')}}if(u)w.open(u,'Post to Micro.blog','location=0,links=0,scrollbars=0,toolbar=0,width=594,height=615')})();"><strong>Post Link to Micro.blog</strong></a>
+<ul>
+<li><strong>Primary function</strong>: Posts selected text as blockquote to Micro.blog with domain link</li>
+<li><strong>Fallback</strong>: Prompts for commentary if no text is selected</li>
+<li><strong>Target</strong>: Micro.blog posting interface</li>
+<li><strong>Link format</strong>: Includes <code>🔗 <em>domain.com</em></code> link without www prefix</li>
+</ul>
+
+## Legal Research Bookmarklets
 
 ### Selection-Based Bookmarklets (Instant Search)
 
